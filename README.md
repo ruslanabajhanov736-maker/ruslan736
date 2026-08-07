@@ -1,0 +1,176 @@
+[index.html](https://github.com/user-attachments/files/30844915/index.html)
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>info — карточки товара для маркетплейсов</title>
+<meta name="description" content="Карточки товара на любой маркетплейс от 800 ₽. Готово за 2 часа. Заказ прямо в Telegram.">
+<style>
+  :root{
+    --bg:#0f1115;
+    --card:#171a21;
+    --accent:#2ea6ff;
+    --accent2:#5b8def;
+    --text:#f4f6f8;
+    --muted:#9aa4b2;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif;
+    background:var(--bg);
+    color:var(--text);
+    line-height:1.5;
+  }
+  .wrap{max-width:880px;margin:0 auto;padding:0 20px;}
+
+  header{padding:80px 0 60px;text-align:center;}
+  header .badge{
+    display:inline-block;background:rgba(46,166,255,.12);color:var(--accent);
+    padding:6px 14px;border-radius:999px;font-size:13px;font-weight:600;margin-bottom:24px;
+  }
+  h1{font-size:clamp(28px,5vw,44px);font-weight:800;letter-spacing:-0.02em;margin-bottom:16px;}
+  h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;}
+  header p{color:var(--muted);font-size:18px;max-width:560px;margin:0 auto 32px;}
+
+  .cta{
+    display:inline-flex;align-items:center;gap:10px;
+    background:linear-gradient(90deg,var(--accent),var(--accent2));
+    color:#fff;text-decoration:none;font-weight:700;font-size:17px;
+    padding:16px 32px;border-radius:14px;
+    box-shadow:0 8px 24px rgba(46,166,255,.35);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  .cta:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(46,166,255,.45);}
+  .cta small{display:block;font-weight:400;opacity:.85;font-size:13px;}
+
+  section{padding:48px 0;}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;}
+  @media(max-width:720px){.grid{grid-template-columns:1fr;}}
+
+  .card{
+    background:var(--card);border:1px solid rgba(255,255,255,.06);
+    border-radius:16px;padding:24px;
+  }
+  .card .num{color:var(--accent);font-weight:800;font-size:14px;margin-bottom:10px;}
+  .card h3{font-size:18px;margin-bottom:8px;}
+  .card p{color:var(--muted);font-size:15px;}
+
+  .price{
+    background:var(--card);border:1px solid rgba(255,255,255,.06);
+    border-radius:20px;padding:40px;text-align:center;margin:24px 0;
+  }
+  .price .amount{font-size:48px;font-weight:800;margin:8px 0;}
+  .price .amount span{font-size:20px;color:var(--muted);font-weight:500;}
+  .price ul{list-style:none;color:var(--muted);font-size:15px;margin-top:16px;display:inline-block;text-align:left;}
+  .price li{padding:4px 0;}
+  .price li::before{content:"✓ ";color:var(--accent);font-weight:700;}
+
+  .faq{border-top:1px solid rgba(255,255,255,.08);padding-top:12px;}
+  .faq details{border-bottom:1px solid rgba(255,255,255,.08);padding:16px 0;}
+  .faq summary{cursor:pointer;font-weight:600;font-size:16px;}
+  .faq p{color:var(--muted);margin-top:10px;font-size:15px;}
+
+  footer{text-align:center;padding:60px 0 40px;color:var(--muted);font-size:14px;}
+  footer a{color:var(--accent);text-decoration:none;}
+
+  .sticky-cta{
+    position:fixed;bottom:0;left:0;right:0;
+    background:rgba(15,17,21,.9);backdrop-filter:blur(8px);
+    border-top:1px solid rgba(255,255,255,.08);
+    padding:12px 20px;display:none;justify-content:center;z-index:10;
+  }
+  @media(max-width:560px){.sticky-cta{display:flex;}}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <span class="badge">Работаем пн–пт 9:00–19:00, сб–вс 10:00–16:00</span>
+    <h1>Карточки товара, которые <span>продают</span></h1>
+    <p>Готовим карточки для любого маркетплейса. Присылаете фото и данные — забираете готовую карточку через 2 часа.</p>
+    <a class="cta" href="https://t.me/Teo_uu_bot" target="_blank" rel="noopener">
+      💬 Написать в Telegram
+    </a>
+  </div>
+</header>
+
+<section>
+  <div class="wrap">
+    <div class="grid">
+      <div class="card">
+        <div class="num">01</div>
+        <h3>Пишете боту</h3>
+        <p>Telegram-ассистент отвечает сразу, уточняет детали заказа и передаёт задачу в работу.</p>
+      </div>
+      <div class="card">
+        <div class="num">02</div>
+        <h3>Готовим карточку</h3>
+        <p>Делаем карточку товара под любой маркетплейс — с учётом требований площадки.</p>
+      </div>
+      <div class="card">
+        <div class="num">03</div>
+        <h3>Забираете за 2 часа</h3>
+        <p>Присылаем результат в чат. Оплата российскими картами и картами Visa и Mastercard.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="price">
+      <div>Стоимость</div>
+      <div class="amount">от 800 ₽ <span>/ карточка</span></div>
+      <ul>
+        <li>Готово за 2 часа</li>
+        <li>−100 ₽ за каждую следующую карточку в заказе</li>
+        <li>Подходит для любого маркетплейса</li>
+      </ul>
+      <div style="margin-top:24px;">
+        <a class="cta" href="https://t.me/Teo_uu_bot" target="_blank" rel="noopener">
+          Рассчитать стоимость в Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <h2 style="margin-bottom:8px;">Частые вопросы</h2>
+    <div class="faq">
+      <details>
+        <summary>Есть ли скидка при заказе нескольких карточек?</summary>
+        <p>Да, каждая следующая карточка в заказе дешевле на 100 ₽.</p>
+      </details>
+      <details>
+        <summary>Как оплатить?</summary>
+        <p>Оплата российскими картами и картами Visa и Mastercard.</p>
+      </details>
+      <details>
+        <summary>Как быстро будет готово?</summary>
+        <p>Стандартный срок — 2 часа с момента получения всех данных по товару.</p>
+      </details>
+      <details>
+        <summary>Как сделать заказ?</summary>
+        <p>Нажмите «Написать в Telegram» — ассистент задаст пару уточняющих вопросов и оформит заявку.</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>info · пн–пт 9:00–19:00, сб–вс 10:00–16:00</p>
+    <p style="margin-top:8px;"><a href="https://t.me/Teo_uu_bot" target="_blank" rel="noopener">t.me/Teo_uu_bot</a></p>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a class="cta" href="https://t.me/Teo_uu_bot" target="_blank" rel="noopener">💬 Написать в Telegram</a>
+</div>
+
+</body>
+</html>
